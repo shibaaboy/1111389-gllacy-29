@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Шибанов](https://up.htmlacademy.ru/htmlcss/29/user/1111389).
-* Наставник: [Николай Солодухин](https://htmlacademy.ru/profile/nikolaysolodukhin). 
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610). 
 
 ---
 
