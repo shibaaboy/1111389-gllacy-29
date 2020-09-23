@@ -3,17 +3,17 @@
 <head>
 	<link rel="stylesheet" href="">
 	<meta charset="UTF-8">
-	<title>Глейси каталог</title>
+	<title>Сливочное мороженое</title>
 </head>
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a href="index.html">
-			<img src="" alt="Лого Глейси">
+				<img src="" alt="Лого Глейси">
 			</a>
 			<ul class="site-navigation">
 				<li>
-					<a href="catalog.html">Каталог</a>
+					<a>Каталог</a>
 				</li>
 				<li>
 					<a href="#">Доставка и оплата</a>
@@ -23,25 +23,27 @@
 				</li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="user-search">Поиск</li>
-				<li class="user-login">Вход</li>
-				<li class="user-basket">Пусто</li>
+				<li class="user-search"><a href="#">Поиск</a></li>
+				<li class="user-login"><a href="#">Вход</a></li>
+				<li class="user-basket active"><a href="#">Пусто</a></li>
 			</ul>
 			<p>с 10 до 20, ежедневно</p>
-			<p>8 812 450-25-25</p>
+			<a href="tel:88124502525">8 812 450-25-25</a>
 		</nav>
 	</header>
 	<main>
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
-			<li><a href="catalog.html"></a>Каталог</li>
-			<li><a href="#"></a>Сливочное</li>
+			<li><a href="catalog.html">Каталог</a></li>
+			<li><a href="#">Сливочное</a></li>
 		</ul>
 		<h1>Сливочное мороженое</h1>
-		<section class="filtr">
+		<section class="filter">
+			<h2 class="visually-hidden">Фильтр товара</h2>
+			<!-- Здесь будет фильтр -->
 		</section>
 		<section class="goods">
-			<h2></h2>
+			<h2 class="visually-hidden">Товары</h2>
 			<div class="icecream product">
 				<img src="" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
 				<p class="price">310 ₽
@@ -140,7 +142,7 @@
 			</div>
 		</section>
 		<aside>
-			<ul class="ul-catalog">
+			<ul class="pagination">
 				<li><a href="#" class="active">1</a></li>
 				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
@@ -156,8 +158,8 @@
 			<li><a href="#">Instagramm</a></li>
 			<li><a href="#">Twitter</a></li>
 		</ul>
-		<ul class="document">
-			<li><a href="#">Для поставщиков</a></li>
+		<ul class="documents">
+			<li class="favorite"><a href="#" >Для поставщиков</a></li>
 			<li><a href="#">О производстве</a></li>
 			<li><a href="#">Наши документы</a></li>
 			<li><a href="#">Экологические стандарты</a></li>
