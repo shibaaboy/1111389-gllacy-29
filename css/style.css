@@ -42,7 +42,7 @@ h1 {
 	line-height: 60px;
 }
 
-h2 { /* ИЛИ ЭТОТ КЛАСС visually-hidden*/ 
+h2 { /* или этот класс visually-hidden*/ 
 	display: none;
 }
 
