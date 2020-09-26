@@ -212,7 +212,9 @@ b {
 	color: var(--basic-dark);
 }
 
-.follow {}
+.follow {
+	background-color: #F8F7F4;
+}
 .follow > p {
 	font-weight: normal;
 	font-size: 16px;
