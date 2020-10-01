@@ -15,7 +15,7 @@
 
 body {
 	min-width: 1200px;
-	margin: 9px 27px 0px 27px;
+	margin: 9px 27px 27px;
 	padding: 0;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: bold;
@@ -28,7 +28,7 @@ img {
 }
 
 .visually-hidden {
-	position: absolute !important;
+	position: absolute;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
 	padding: 0;
@@ -158,11 +158,10 @@ img {
 	box-shadow: inset 0px 2px 2px #942718;
 }
 
-input[type="radio" i] {
+.slider-input {
 	width: 21px;
 	height: 21px;
 }
-
 
 /* Banner */
 
@@ -171,23 +170,24 @@ input[type="radio" i] {
 	color: var(--basic-white);
 }
 
-.chocolate h3 {
-	font-size: 35px;
-	line-height: 41px;	
-}
-
-.raspberry h3 {
-	font-size: 35px;
-	line-height: 41px;
-}
-
-.raspberry > p {
+.banner-wrapper p {
 	font-size: 18px;
 	line-height: 22px;
 }
 
+.banner-wrapper h3 {
+	font-size: 35px;
+	line-height: 41px;
+}
+
 /*
 .raspberry {
+	background-image: url('');
+}
+*/
+
+/*
+.chocolate {
 	background-image: url('');
 }
 */
@@ -197,12 +197,6 @@ input[type="radio" i] {
 	font-size: 18px;
 	line-height: 24px;
 }
-
-/*
-.chocolate {
-	background-image: url('');
-}
-*/
 
 /* Hits */
 
@@ -237,7 +231,7 @@ input[type="radio" i] {
 
 /* About shop */
 
-b {
+.about-shop b {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 30px;
@@ -318,7 +312,7 @@ b {
 }
 */
 
-adress {
+.contact-wrapper adress {
 	font-size: 18px;
 	line-height: 24px;
 	color: var(--basic-dark);
