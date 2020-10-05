@@ -25,6 +25,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  border: none;
 }
 
 .visually-hidden {
@@ -180,17 +181,19 @@ img {
 	line-height: 41px;
 }
 
-/*
 .raspberry {
-	background-image: url('');
+	width: 560px;
+	height: 229px;
+	background: url('../img/Backgrounds/raspberry.jpg') no-repeat;
+	border-radius: 16px;
 }
-*/
 
-/*
 .chocolate {
-	background-image: url('');
+	width: 560px;
+	height: 229px;
+	background: url('../img/Backgrounds/chocolate.jpg') no-repeat;
+	border-radius: 16px;
 }
-*/
 
 .banner {
 	padding: 15px 22px;
@@ -203,6 +206,10 @@ img {
 .hits {
 	margin-bottom: 40px;
 	color: var(--basic-white);
+}
+
+.icecream-hit img {
+	border-radius: 50%;
 }
 
 .icecream-hit:hover {
@@ -238,15 +245,12 @@ img {
 	color: var(--basic-dark);
 }
 
-.about-shop{
+.about-shop {
 	margin-bottom: 40px;
+	height: 306px;
+	background: url('../img/Backgrounds/pattern.png') repeat;
+	border-radius: 16px;
 }
-
-/*
-.about-shop-items {
-	background-image: url('');
-}
-*/
 
 .about-shop-item {
 	font-size: 16px;
@@ -255,17 +259,34 @@ img {
 	color: var(--basic-gray);
 }
 
+.ice-img {
+	background: url('../img/SVG/Мороженое.svg') no-repeat;
+}
+
+.list-img {
+	background: url('../img/SVG/Листик.svg') no-repeat;
+}
+
+.cow-img{
+	background: url('../img/SVG/Корова.svg') no-repeat;
+}
+
+.term-img{
+	background: url('../img/SVG/Градусник.svg') no-repeat;
+}
+
 /* Info */
 
 .info-blog {
 	margin-bottom: 40px;
 }
 
-/*
 .news {
-	background-image: url('');
+	width: 560px;
+	height: 220px;
+	background: url('../img/Backgrounds/strawberry.jpg') no-repeat;
+	border-radius: 16px;
 }
-*/
 
 .news > span {	
 	font-size: 16px;
@@ -285,7 +306,10 @@ img {
 }
 
 .follow {
-	background-color: #F8F7F4;
+	width: 560px;
+	height: 220px;
+	background-image: url('../img/Backgrounds/mail.jpg');
+	border-radius: 16px;
 }
 
 .follow > p {
@@ -306,11 +330,11 @@ img {
 
 /* Contacts */
 
-/*
 .contact {
-	background-image: url('');
+	width: 303px;
+	height: 306px;
+	background-color: #FEFEFE;
 }
-*/
 
 .contact-wrapper adress {
 	font-size: 18px;
@@ -340,6 +364,11 @@ img {
 
 .social-network li {
 	list-style: none;
+}
+
+.social-network img {
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .social-network a {
@@ -457,10 +486,6 @@ img {
 	list-style: none;
 }
 
-.pagination a {
-	text-decoration: none;
-}
-
 .pagination-link:hover {
 	background: rgba(255, 255, 255, 0.2);
 }
@@ -475,6 +500,7 @@ img {
     width: 26px;
     height: 26px;
     color: var(--basic-white);
+    text-decoration: none;
 }
 
 .pagination-active {
