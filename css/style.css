@@ -102,11 +102,25 @@ img {
 .user-navigation a {
 	color: var(--basic-white);
 	text-decoration: none;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
 }
 
-.user-search:hover,
-.user-login:hover,
-.user-basket:hover {
+.search {
+	padding: 8px;
+}
+
+.login {
+	padding: 6px 16px 7px 16px;
+}
+
+.basket {
+	padding: 6px 16px;
+}
+
+.search:hover,
+.login:hover,
+.basket:hover {
 	background-color: var(--basic-white);
 	color: var(--basic-dark);
 }
@@ -252,6 +266,7 @@ img {
 }
 
 .about-shop {
+	position: relative;
 	margin-bottom: 40px;
 	min-height: 306px;
 	background-image: url('../img/Backgrounds/pattern.jpg');
@@ -266,23 +281,54 @@ img {
 	color: var(--basic-gray);
 }
 
-.ice-img {
-	background-image: url('../img/SVG/Мороженое.svg');
+.about-shop-items p {
+	margin-left: 75px;
+}
+
+.ice-img:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 32px;
+	top: 15%;
+	left: 36px;
+	background-image: url('../img/SVG/ice-cream.svg');
+}
+
+.list-img:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 27px;
+	top: 99px;
+	left: 36px;
+	background-image: url('../img/SVG/list.svg');
 	background-repeat: no-repeat;
 }
 
-.list-img {
-	background-image: url('../img/SVG/Листик.svg');
+.cow-img:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 45%;
+	left: 36px;
+	background-image: url('../img/SVG/cow.svg');
 	background-repeat: no-repeat;
 }
 
-.cow-img{
-	background-image: url('../img/SVG/Корова.svg');
-	background-repeat: no-repeat;
-}
-
-.term-img{
-	background-image: url('../img/SVG/Градусник.svg');
+.term-img:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 26px;
+	top: 60%;
+	left: 36px;
+	background-image: url('../img/SVG/term.svg');
 	background-repeat: no-repeat;
 }
 
@@ -318,9 +364,20 @@ img {
 }
 
 .follow {
+	position: relative;
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
 	background-image: url('../img/Backgrounds/mail.jpg');
+	border-radius: 16px;
+}
+
+.follow-bg {
+	position: absolute;
+	top: 5px;
+	left: 6px;
+	width: 548px;
+	height: 210px;
+	background-color: #F8F7F4;
 	border-radius: 16px;
 }
 
@@ -378,7 +435,7 @@ img {
 	list-style: none;
 }
 
-.social-network img {
+.social-network svg {
 	border-radius: 50%;
 	border: 2px solid rgba(255, 255, 255, 0.5);
 }
@@ -398,6 +455,7 @@ img {
 }
 
 .documents {
+	position: relative;
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 18px;
@@ -413,6 +471,18 @@ img {
 	font-size: 13px;
 	font-weight: bold;
 	line-height: 18px;
+}
+
+.favorite:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 13px;
+	top: 2px;
+	left: 20px;
+	background-image: url('../img/SVG/heart.svg');
+	background-repeat: no-repeat;
 }
 
 .main-footer-logo > p {
