@@ -78,6 +78,10 @@ img {
 	line-height: 18px;
 }
 
+.site-navigation-link{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .site-navigation-link:hover {
 	padding: 9px 13px 11px 13px;
 	background-color: #EDEDED;
@@ -228,11 +232,21 @@ img {
 	color: var(--basic-white);
 }
 
-.hit img {
-	border-radius: 50%;
+.hit:before {
+	content: '';
+	position: absolute;
+	width: 61px;
+	height: 61px; 
+	background-image: url('../img/Ice-cream/hit.png');
+	background-repeat: no-repeat;
 }
 
-.hit:hover {
+.icecream img {
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.icecream:hover {
 	opacity: 0.2;
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -289,21 +303,21 @@ img {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 16px;
-	height: 32px;
-	top: 15%;
-	left: 36px;
-	background-image: url('../img/SVG/ice-cream.svg');
+	width: 49px;
+	height: 49px;
+	top: 20%;
+	left: 20px;
+	background-image: url('../img/SVG/ice.svg');
 }
 
 .list-img:after {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 16px;
-	height: 27px;
-	top: 99px;
-	left: 36px;
+	width: 49px;
+	height: 49px;
+	top: 40%;
+	left: 20px;
 	background-image: url('../img/SVG/list.svg');
 	background-repeat: no-repeat;
 }
@@ -312,10 +326,10 @@ img {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 24px;
-	height: 24px;
-	top: 45%;
-	left: 36px;
+	width: 49px;
+	height: 49px;
+	top: 60%;
+	left: 20px;
 	background-image: url('../img/SVG/cow.svg');
 	background-repeat: no-repeat;
 }
@@ -324,10 +338,10 @@ img {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 16px;
-	height: 26px;
-	top: 60%;
-	left: 36px;
+	width: 49px;
+	height: 49px;
+	top: 80%;
+	left: 20px;
 	background-image: url('../img/SVG/term.svg');
 	background-repeat: no-repeat;
 }
@@ -461,6 +475,10 @@ img {
 	line-height: 18px;
 }
 
+.documents-link {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .documents-link:hover,
 .documents-link:active {
 	color: var(--basic-orange);
@@ -492,6 +510,10 @@ img {
 	color: var(--basic-white);
 }
 
+.main-footer-logo span {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /* Cream header */
 
 .active-catalog {
@@ -513,6 +535,10 @@ img {
 
 .breadcrumbs li {
 	list-style: none;
+}
+
+.breadcrumbs-link {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumbs-link:hover,
@@ -554,6 +580,11 @@ img {
 	font-size: 16px;
 	line-height: 22px;
 }
+
+.icecream-description {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 
 .icecream-price > span {
 	font-weight: normal;
