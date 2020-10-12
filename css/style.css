@@ -115,6 +115,22 @@ img {
 	padding-left: 12px;
 }
 
+.goods {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.breadcrumbs {
+	display: flex;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+}
 
 /* GRID */
 
@@ -707,6 +723,32 @@ img {
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 16px;
+}
+
+.breadcrumbs li {
+	padding-right: 24px;
+}
+
+.breadcrumbs li:first-child:after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	top: 5px;
+	left: 62px;
+	background-image: url('../img/SVG/1.svg');
+	background-repeat: no-repeat;
+}
+
+.breadcrumbs li:nth-child(2):after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	top: 5px;
+	left: 140px;
+	background-image: url('../img/SVG/1.svg');
+	background-repeat: no-repeat;
 }
 
 /* Cream goods */
