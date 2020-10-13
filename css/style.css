@@ -3,7 +3,6 @@
 :root {
 	--basic-green: #849d8f;
 	--basic-white: #ffffff;
-	--basic-black: #323232;
 	--basic-blue: #8996a6;
 	--basic-brown: #9d8b84;
 	--basic-dark: #323232;
@@ -79,10 +78,6 @@ img {
 	padding: 3px 0 0 24px;
 }
 
-.site-navigation li {
-	padding-right: 32px;
-}
-
 .slider-item {
 	display: flex;
 	position: relative;
@@ -150,6 +145,24 @@ img {
 	grid-template-columns: auto 1fr 1fr;
 }
 
+.main-txt {
+	text-align: right;
+}
+
+.main-tel {
+
+}
+
+.main-header {
+	position: relative;
+}
+
+.main-contact {
+	position: absolute;
+	right: 10px;
+	top: 66px;
+}
+
 .banner-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -207,9 +220,6 @@ img {
 	justify-self: center;
 }
 
-/* Main header */
-
-
 /* Main navigation */
 
 .main-navigaton {
@@ -226,11 +236,10 @@ img {
 }
 
 .site-navigation-link {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 9px 13px 11px 13px;
 }
 
 .site-navigation-link:hover {
-	padding: 9px 13px 11px 13px;
 	background-color: #EDEDED;
 	border-radius: 26px;
 	color: var(--basic-dark);
@@ -243,11 +252,19 @@ img {
 
 .site-navigation a {
 	color: var(--basic-white);
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: rgba(255, 255, 255, .2);
 }
 
 .user-navigation li {
 	list-style: none;
+}
+
+.user-navigation a {
+	color: var(--basic-white);
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
 }
 
 .user-navigation a {
@@ -274,21 +291,35 @@ img {
 .basket:hover {
 	background-color: var(--basic-white);
 	color: var(--basic-dark);
+	fill: var(--basic-dark);
 }
 
-.user-navigation{
+.user-navigation:hover path {
+	fill: var(--basic-dark);
+}
+
+.user-navigation {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
 }
 
-.main-navigation > p {
+.user-navigation p {
+	padding: 0;
+	margin: 0;
+	padding-top: 2px;
+	padding-left: 8px;
+}
+
+.main-contact > p {
 	font-size: 14px;
 	line-height: 16px;
 	color: var(--basic-white);
+	margin: 0;
+	padding-bottom: 8px;
 }
 
-.main-navigation > a {
+.main-contact > a {
 	font-size: 22px;
 	line-height: 24px;
 	color: var(--basic-white);
@@ -304,11 +335,13 @@ img {
 }
 
 .icecream-title {
+	width: 672px;
 	font-size: 60px;
 	line-height: 60px;
-	text-align: center;
+	
 	color: var(--basic-white);
-	padding-top: 283px;
+	padding-top: 325px;
+	margin: 0 auto;
 }
 
 .slider {
@@ -322,7 +355,7 @@ img {
 
 .go {
 	position: absolute;
-	bottom: 41px;
+	bottom: 40px;
 	padding: 9px 40px;
 	font-size: 32px;
 	line-height: 44px;
@@ -352,11 +385,16 @@ img {
 .banner-wrapper p {
 	font-size: 18px;
 	line-height: 22px;
+	margin: 0;
+	padding-right: 30px;
+	margin-top: -16px;
 }
 
 .banner-wrapper h3 {
 	font-size: 35px;
 	line-height: 41px;
+	margin-top: 0;
+	padding-top: 16px;
 }
 
 .raspberry {
@@ -366,11 +404,14 @@ img {
 	background-image: url('../img/Backgrounds/raspberry.jpg');
 	background-size: cover;
 	border-radius: 16px;
+	padding-left: 16px;
+	box-sizing: border-box;
 }
 
 .chocolate {
 	position: relative;
 	width: 560px;
+	padding-left: 16px;
 	min-height: 229px;
 	background-image: url('../img/Backgrounds/chocolate.jpg');
 	background-size: cover;
@@ -389,6 +430,7 @@ img {
 /* Hits */
 
 .hits {
+	position: relative;
 	margin-bottom: 40px;
 	color: var(--basic-white);
 }
@@ -414,8 +456,11 @@ img {
 }
 
 .price {
+	position: absolute;
+	bottom: 45px;
 	font-size: 45px;
 	line-height: 45px;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .icecream-description {
@@ -519,6 +564,7 @@ img {
 	background-image: url('../img/Backgrounds/strawberry.jpg');
 	background-repeat: no-repeat;
 	border-radius: 16px;
+	box-sizing: border-box;
 }
 
 .news > span {	
@@ -530,12 +576,13 @@ img {
 }
 
 .ten-way {
+	width: 287px;
 	font-size: 24px;
 	line-height: 30px;
+	padding-left: 20px;
 }
 
 .ten-way > a {
-	padding-left: 20px;
 	text-decoration: underline;
 	color: var(--basic-dark);
 }
@@ -546,6 +593,7 @@ img {
 	min-height: 220px;
 	background-image: url('../img/Backgrounds/mail.jpg');
 	border-radius: 16px;
+	box-sizing: border-box;
 }
 
 .follow-bg {
@@ -559,12 +607,14 @@ img {
 }
 
 .follow p {
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 22px;
-	color: var(--basic-gray);
-	padding-left: 20px;
-	padding-top: 15px;
+	margin-top: 0;
+    padding-top: 29px;
+    padding-left: 20px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    color: var(--basic-gray);
 }
 
 .send {
@@ -579,12 +629,33 @@ img {
 	box-shadow: none;
 }
 
+/* Map */
+
+.map {
+	position: relative;
+}
+
 /* Contacts */
 
 .contact {
+	position: absolute;
+	top: 50%;
+	right: 0;
 	width: 303px;
 	height: 306px;
 	background-color: #FEFEFE;
+	transform: translateY(-50%);
+	border-radius: 16px;
+}
+
+.contact-tell {
+	color: var(--basic-dark);
+	text-decoration: none;
+}
+
+.contact-wrapper {
+	padding-left: 25px;
+    box-sizing: border-box;
 }
 
 .contact-wrapper adress {
@@ -593,22 +664,29 @@ img {
 	color: var(--basic-dark);
 }
 
-.form {
+.contact-form {
+	position: absolute;
+	bottom: 31px;
 	padding: 13px 28px;
 	font-size: 18px;
 	line-height: 24px;
 }
 
 .contact-wrapper > p {
+	margin: 0;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 20px;
 	color: var(--basic-gray);
 }
 
-.contact-wrapper a {
-	color: var(--basic-white);
-	text-decoration: none;
+.contact-order {
+	padding-top: 30px;
+}
+
+.contact-address {
+	padding-top: 32px;
+
 }
 
 /* Footer */
@@ -651,7 +729,6 @@ img {
 .documents-link:active {
 	color: var(--basic-orange);
 }
-
 
 .favorite {
 	font-size: 13px;
@@ -754,6 +831,7 @@ img {
 /* Cream goods */
 
 .goods {
+	position: relative;
 	margin-bottom: 80px;
 	color: var(--basic-white);
 }
@@ -765,8 +843,11 @@ img {
 }
 
 .icecream-price {
+	position: absolute;
+    margin-top: -45px;
 	font-size: 45px;
 	line-height: 45px;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .icecream-description {
