@@ -1053,12 +1053,3 @@ img {
 
 /* Forms */
 
-.user-navigation form {
-	padding: 20px;
-	width: 277px;
-	height: 214px;
-	background-color: var(--basic-light);
-	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 4px;
-	box-sizing: border-box;
-}
