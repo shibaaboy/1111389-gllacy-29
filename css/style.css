@@ -8,6 +8,7 @@
 	--basic-dark: #323232;
 	--basic-gray: #5A5A5A;
 	--basic-orange: #FFBC9E;
+	--basic-light: #F8F7F4;
 }
 
 /* Global */
@@ -1048,4 +1049,16 @@ img {
     left: 0;
     border-radius: 50%;
     z-index: -1;
+}
+
+/* Forms */
+
+.user-navigation form {
+	padding: 20px;
+	width: 277px;
+	height: 214px;
+	background-color: var(--basic-light);
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+	box-sizing: border-box;
 }
