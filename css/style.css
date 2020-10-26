@@ -16,6 +16,7 @@
 body {
 	min-width: 1200px;
 	padding: 0;
+	padding-top: 9px;
 	margin: 0;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: bold;
@@ -139,10 +140,8 @@ img {
 
 .page-body {
 	min-height: 100%;
-  	display: grid;
   	grid-template-rows: min-content 1fr 1fr;
   	align-content: start;
-  	padding: 9px 27px 27px;
 }
 
 .main-navigation {
@@ -501,50 +500,46 @@ img {
 	position: relative;
 }
 
-.slider-nav label:first-child:before{
+.slider-nav label:before {
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 63px;
-	left: 0;
 	width: 21px;
 	height: 21px;
-	border: 2px solid #FFFFFF;
-	background-color: var(--basic-white);
+	bottom: 63px;
 	border-radius: 50%;
+}
+
+.slider-nav label:first-child:before{
+	left: 0;
+	background-color: var(--basic-white);
+	border: 2px solid #FFFFFF;
 }
 
 .slider-nav label:nth-child(2):before{
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: 63px;
 	left: 29px;
-	width: 21px;
-	height: 21px;
-	border: 2px solid #FFFFFF;
 	background-color: transparent;
-	border-radius: 50%;
+	border: 2px solid #FFFFFF;
 }
 
 .slider-nav label:last-child:before{
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: 63px;
 	left: 58px;
-	width: 21px;
-	height: 21px;
-	border: 2px solid #FFFFFF;
 	background-color: transparent;
-	border-radius: 50%;
+	border: 2px solid #FFFFFF;
 }
 
-.slider-nav label:nth-child(2):hover,
+.slider-nav label:last-child:hover:before,
+.slider-nav label:nth-child(2):hover:before {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* .slider-nav label:nth-child(2):hover,
 .slider-nav label:last-child:hover {
 	cursor: pointer;
 	background-color: background: rgba(255, 255, 255, 0.4);
-}
+} */
 
 /* Banner */
 
@@ -587,6 +582,7 @@ img {
 	background-image: url('../img/Backgrounds/chocolate.jpg');
 	background-size: cover;
 	border-radius: 16px;
+	box-sizing: border-box;
 }
 
 .banner {
@@ -699,6 +695,7 @@ img {
 	background-image: url('../img/Backgrounds/pattern.jpg');
 	background-repeat: repeat;
 	border-radius: 16px;
+	box-sizing: border-box;
 }
 
 .about-shop-item {
@@ -845,17 +842,20 @@ img {
 /* Map */
 
 .map {
-	position: relative;
 	width: 100vw;
 	left: 0;
 }
 
 /* Contacts */
 
+.map-wrapper {
+	position: relative;
+}
+
 .contact {
 	position: absolute;
-	top: 50%;
-	right: 20%;
+	bottom: -85px;
+	right: 0;
 	width: 303px;
 	height: 306px;
 	background-color: #FEFEFE;
@@ -920,6 +920,23 @@ img {
 .social-network a {
 	text-decoration: none;
 	color: var(--basic-white);
+}
+
+.social-network .fb:hover path,
+.social-network .vk:hover path,
+.social-network .inst:hover path,
+.social-network .tv:hover path {
+	fill: var(--basic-white);
+	fill-opacity: 1;
+}
+
+.social-network svg:active ,
+.social-network svg:active ,
+.social-network svg:active ,
+.social-network svg:active {
+	fill: var(--basic-white);
+	fill-opacity: 1;
+	border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .documents a {
