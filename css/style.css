@@ -16,7 +16,6 @@
 body {
 	min-width: 1200px;
 	padding: 0;
-	padding-top: 9px;
 	margin: 0;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: bold;
@@ -155,6 +154,7 @@ img {
 
 .main-header {
 	position: relative;
+	padding-top: 9px;
 }
 
 .main-contact {
@@ -227,6 +227,20 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
+}
+
+.main-footer-academy {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	color: var(--basic-white);
+}
+
+.main-footer-academy:hover {
+	color: var(--basic-orange);	
+}
+
+.main-footer-academy:active {
+	color: var(--basic-orange);	
 }
 
 /* Main navigation */
@@ -508,24 +522,23 @@ img {
 	height: 21px;
 	bottom: 63px;
 	border-radius: 50%;
+	box-sizing: border-box;
+	border: 2px solid #FFFFFF;
+	background-color: transparent;
 }
 
 .slider-nav label:first-child:before{
 	left: 0;
 	background-color: var(--basic-white);
-	border: 2px solid #FFFFFF;
 }
 
 .slider-nav label:nth-child(2):before{
 	left: 29px;
-	background-color: transparent;
-	border: 2px solid #FFFFFF;
 }
 
 .slider-nav label:last-child:before{
 	left: 58px;
-	background-color: transparent;
-	border: 2px solid #FFFFFF;
+	
 }
 
 .slider-nav label:last-child:hover:before,
@@ -533,13 +546,6 @@ img {
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.4);
 }
-
-
-/* .slider-nav label:nth-child(2):hover,
-.slider-nav label:last-child:hover {
-	cursor: pointer;
-	background-color: background: rgba(255, 255, 255, 0.4);
-} */
 
 /* Banner */
 
