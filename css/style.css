@@ -94,10 +94,6 @@ img {
 	justify-content: flex-end;
 }
 
-.user-navigation li {
-	padding-right: 10px;
-}
-
 .about-shop-items {
 	display: flex;
     flex-direction: row;
@@ -160,9 +156,9 @@ img {
 
 .main-contact {
 	position: absolute;
-	right: 10px;
-	top: 66px;
-	z-index: 1;
+	right: 0px;
+    top: 76px;
+    z-index: 1;
 }
 
 .banner-wrapper {
@@ -322,11 +318,12 @@ img {
 }
 
 .login {
-	padding: 6px 16px 7px 16px;
+	padding: 6px 20px 7px 16px;
 }
 
 .basket {
 	padding: 6px 16px;
+	padding: 6px 16px 6px 16px;
 }
 
 .search:hover,
@@ -350,16 +347,20 @@ img {
 	line-height: normal;
 }
 
-.login svg,
-.basket svg {
+.login svg {
 	margin-right: 5px;
 }
 
-.user-navigation p {
-	padding: 0;
-	margin: 0;
-	padding-top: 2px;
-	padding-left: 8px;
+.basket svg {
+	margin-right: 8px;
+}
+
+.user-navigation-link-search {
+	padding-right: 10px;
+}
+
+.user-navigation-link-login {
+	padding-right: 10px;
 }
 
 .main-contact > p {
@@ -454,7 +455,7 @@ img {
 
 .slider-img {
 	position: absolute;
-	bottom: -10px;
+	bottom: -6px;
 	z-index: -1;
 }
 
@@ -462,9 +463,8 @@ img {
 	width: 672px;
 	font-size: 60px;
 	line-height: 60px;
-	
 	color: var(--basic-white);
-	padding-top: 325px;
+	padding-top: 320px;
 	margin: 0 auto;
 }
 
@@ -491,10 +491,11 @@ img {
 
 .go {
 	position: absolute;
-	bottom: 40px;
-	padding: 9px 40px;
+	bottom: 55px;
+	left: 435px;
 	font-size: 32px;
 	line-height: 44px;
+	padding: 9px 33px;
 }
 
 .go:hover {
@@ -521,7 +522,7 @@ img {
 	position: absolute;
 	width: 21px;
 	height: 21px;
-	bottom: 63px;
+	bottom: 77px;
 	border-radius: 50%;
 	box-sizing: border-box;
 	border: 2px solid #FFFFFF;
@@ -529,16 +530,16 @@ img {
 }
 
 .slider-nav label:first-child:before{
-	left: 0;
+	left: -27px;
 	background-color: var(--basic-white);
 }
 
 .slider-nav label:nth-child(2):before{
-	left: 29px;
+	left: 2px;
 }
 
 .slider-nav label:last-child:before{
-	left: 58px;
+	left: 31px;
 	
 }
 
@@ -551,7 +552,8 @@ img {
 /* Banner */
 
 .banner-wrapper {
-	margin-bottom: 40px;
+	margin-top: -15px;
+	margin-bottom: 41px;
 	color: var(--basic-white);
 }
 
@@ -560,14 +562,14 @@ img {
 	line-height: 22px;
 	margin: 0;
 	padding-right: 30px;
-	margin-top: -16px;
+	margin-top: -19px;
 }
 
 .banner-wrapper h3 {
 	font-size: 35px;
 	line-height: 41px;
 	margin-top: 0;
-	padding-top: 16px;
+	padding-top: 17px;
 }
 
 .raspberry {
@@ -594,18 +596,18 @@ img {
 
 .banner {
 	position: absolute;
-	right: 22px;
-	bottom: 22px;
-	padding: 15px 22px;
-	font-size: 18px;
-	line-height: 24px;
+    right: 22px;
+    bottom: 22px;
+    padding: 11px 22px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 /* Hits */
 
 .hits {
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 17px;
 	color: var(--basic-white);
 }
 
@@ -644,7 +646,8 @@ img {
 
 .price {
 	position: absolute;
-	bottom: 45px;
+	bottom: 48px;
+	left: 0;
 	font-size: 45px;
 	line-height: 45px;
 	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -725,8 +728,8 @@ img {
 	position: absolute;
 	width: 49px;
 	height: 49px;
-	top: -7px;
-	left: 0;
+	top: -9px;
+    left: 0px;
 	background-image: url('../img/SVG/ice.svg');
 }
 
@@ -736,7 +739,7 @@ img {
 	position: absolute;
 	width: 49px;
 	height: 49px;
-	top: -10px;
+	top: -19px;  
 	left: 0;
 	background-image: url('../img/SVG/list.svg');
 	background-repeat: no-repeat;
@@ -748,8 +751,8 @@ img {
 	position: absolute;
 	width: 49px;
 	height: 49px;
-	top: -7px;
-	left: 0;
+	top: -9px;
+	left: -1px;
 	background-image: url('../img/SVG/cow.svg');
 	background-repeat: no-repeat;
 }
@@ -760,8 +763,8 @@ img {
 	position: absolute;
 	width: 49px;
 	height: 49px;
-	top: -10px;
-	left: 0;
+	top: -19px;
+	left: -1px;
 	background-image: url('../img/SVG/term.svg');
 	background-repeat: no-repeat;
 }
@@ -783,7 +786,7 @@ img {
 
 .news > span {	
 	display: block;
-	margin-top: 13px;
+	margin-top: 19px;
 	margin-left: 20px;
 	font-size: 16px;
 	font-weight: 500;
@@ -796,7 +799,7 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	margin-left: 20px;
-	margin-top: 0;
+	margin-top: 1px;
 }
 
 .ten-way > a {
@@ -825,7 +828,7 @@ img {
 
 .follow p {
 	margin-top: 0;
-    padding-top: 29px;
+    padding-top: 24px;
     padding-left: 20px;
     padding-right: 16px;
     font-size: 16px;
@@ -835,15 +838,17 @@ img {
 }
 
 .send {
-	position: absolute;
-	right: 20px;
-	bottom: 36px;
-	padding: 14px 19px;
 	font-size: 18px;
 	line-height: 24px;
-	color: var(--basic-white);
-	border: none;
-	box-shadow: none;
+	position: absolute;
+    right: 21px;
+    bottom: 35px;
+    padding: 8px 20px 13px 19px;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+    border: none;
+    box-shadow: none;
 }
 
 /* Map */
@@ -861,13 +866,13 @@ img {
 
 .contact {
 	position: absolute;
-	bottom: -85px;
-	right: 0;
-	width: 303px;
-	height: 306px;
-	background-color: #FEFEFE;
-	transform: translateY(-50%);
-	border-radius: 16px;
+    bottom: -87px;
+    right: 8px;
+    width: 303px;
+    height: 306px;
+    background-color: #FEFEFE;
+    transform: translateY(-50%);
+    border-radius: 16px;
 }
 
 .contact-tell {
@@ -888,8 +893,8 @@ img {
 
 .contact-form {
 	display: block;
-	margin-top: 31px;
-	padding: 13px 28px;
+	margin-top: 39px;
+    padding: 9px 28px 10px 28px;
 	font-size: 18px;
 	line-height: 24px;
 }
