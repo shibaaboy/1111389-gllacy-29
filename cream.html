@@ -25,14 +25,21 @@
 				</li>
 			</ul>
 			<ul class="user-navigation">
-				<li>
+				<li class="user-navigation-link-search">
 					<a class="user-navigation search" href="#">
 						<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/>
 						</svg>
 					</a>
+					<div class="search-form">
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<label for="label-search">
+								<input type="search" name="label-search" id="label-search" placeholder="Крем-брюле">
+							</label>
+						</form>
+					</div>
 				</li>
-				<li>
+				<li class="user-navigation-link-login">
 					<a class="user-navigation login" href="#">
 					<svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/>
@@ -40,9 +47,22 @@
 					</svg>
 					Вход
 					</a>
+					<div class="login-form">
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<label for="label-login">
+								<input type="text" name="login" id="login-field" placeholder="email@example.com" required>
+							</label>
+							<label for="label-password">
+								<input type="password" name="password" id="password-field" placeholder="......" required>
+							</label>
+								<input type="submit" class="btn-login button" value="Войти">
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</form>
+					</div>
 				</li>
 				<li>
-					<a class="user-navigation basket" href="#">
+					<a class="user-navigation basket">
 					<svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9zM7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2z" fill="#fff"/>
 					</svg>
@@ -178,7 +198,7 @@
 			</ul>
 		</aside>
 	</main>
-	<footer class="main-footer border container">
+	<footer class="main-footer container border">
 		<ul class="social-network">
 			<li><a class="social-network fb" href="#">
 				<svg width="32" height="32" fill="rgb(255, 255, 255)" fill-opacity="0.8" xmlns="http://www.w3.org/2000/svg"><path d="M16 0a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H17v3.45h3v3.44h-3V25h-3v-8.66h-3V12.9h3V9.45A3.25 3.25 0 0117 6h3v3.45h.06z" fill="#fff" fill-opacity=".8"/></svg>
@@ -201,13 +221,13 @@
 		</ul>
 		<ul class="documents">
 			<li class="favorite"><a class="documents-link" href="#">Для поставщиков</a></li>
-			<li><a class="documents-link" href="#">О производстве</a></li>
 			<li><a class="documents-link" href="#">Наши документы</a></li>
+			<li><a class="documents-link" href="#">О производстве</a></li>
 			<li><a class="documents-link" href="#">Экологические стандарты</a></li>
 		</ul>
 		<div class="main-footer-logo">
-			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/SVG/logo academy.svg" width="108" height="39" alt="Лого HTML Academy"></a>
-			<p>Сделано в <span>HTML Academy </span>&copy; 2019</p>
+			<a class="main-footer-img" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/SVG/logo academy.svg" width="108" height="39" alt="Лого HTML Academy"></a>
+			<p class="main-footer-txt">Сделано в <a class="main-footer-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>&copy; 2019</p>
 		</div>
 	</footer>
 </body>
