@@ -1321,46 +1321,56 @@ img {
 
 #name-field {
 	font-size: 16px;
-	line-height: 24px;
-	width: 267px;
-	margin-top: 25px;
-    margin-left: 20px;
+    line-height: 24px;
+    width: 267px;
+    margin-top: 20px;
+    margin-left: 24px;
     padding: 10px 0 8px 14px;
-	box-sizing: border-box;
-	border: 1px solid rgba(178, 178, 178, 0.52);
-	border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 4px;
 }
 
 #email-field-second {
 	font-size: 16px;
-	line-height: 24px;
-	width: 267px;
-	margin-top: 25px;
-    margin-left: 20px;
+    line-height: 24px;
+    width: 267px;
+    margin-top: 20px;
+    margin-left: 24px;
     padding: 10px 0 8px 14px;
-	box-sizing: border-box;
-	border: 1px solid rgba(178, 178, 178, 0.52);
-	border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 4px;
 }
 
 #txt-forms {
 	padding: 10px 0 8px 14px;
 	font-size: 16px;
 	line-height: 20px;
-	margin-top: 25px;
-    margin-left: 20px;
+	margin-top: 20px;
+    margin-left: 24px;
     border: 1px solid rgba(178, 178, 178, 0.52);
 	box-sizing: border-box;
 	border-radius: 4px;
 }
 
 .contact-btn {
-    padding: 8px 20px 13px 19px;
-    margin-top: 25px;
-    margin-left: 324px; 
-	font-size: 18px;
-	line-height: 24px;
+    padding: 10px 24px 11px 26px;
+    margin-top: 15px;
+    margin-left: 312px;
+    font-size: 18px;
+    line-height: 24px;
     color: var(--basic-white);
     border: none;
     box-shadow: none;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.form-title {
+	margin: 0;
+    padding-top: 14px;
+    padding-left: 23px;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--basic-dark);
 }
