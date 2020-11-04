@@ -1070,7 +1070,7 @@ img {
 /* Cream title*/
 
 .cream-title {
-	padding-top: 10px;
+	padding-top: 1px;
 	font-size: 35px;
 	line-height: 41px;
 	text-align: left;
@@ -1098,14 +1098,14 @@ img {
 }
 
 .breadcrumbs {
-	padding-top: 28px;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 16px;
+	padding-top: 23px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
 }
 
 .breadcrumbs li {
-	padding-right: 24px;
+	padding-right: 23px;
 }
 
 .breadcrumbs li:first-child:after {
@@ -1113,7 +1113,7 @@ img {
 	position: absolute;
 	width: 6px;
 	height: 6px;
-	top: 32px;
+	top: 27px;
 	left: 62px;
 	background-image: url('../img/SVG/1.svg');
 	background-repeat: no-repeat;
@@ -1124,8 +1124,8 @@ img {
 	position: absolute;
 	width: 6px;
 	height: 6px;
-	top: 32px;
-	left: 140px;
+	top: 27px;
+	left: 137px;
 	background-image: url('../img/SVG/1.svg');
 	background-repeat: no-repeat;
 }
