@@ -38,7 +38,13 @@
 							<path d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/>
 						</svg>
 					</a>
-					<div class="search-form"></div>
+					<div class="search-form">
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<label for="label-search">
+								<input type="search" name="label-search" id="label-search" placeholder="Крем-брюле">
+							</label>
+						</form>
+					</div>
 				</li>
 				<li class="user-navigation-link-login">
 					<a class="user-navigation login" href="#">
@@ -48,7 +54,19 @@
 					</svg>
 					Вход
 					</a>
-					<div class="login-form"></div>
+					<div class="login-form">
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<label for="label-login">
+								<input type="text" name="login" id="login-field" placeholder="email@example.com" required>
+							</label>
+							<label for="label-password">
+								<input type="password" name="password" id="password-field" placeholder="......" required>
+							</label>
+								<input type="submit" class="btn-login button" value="Войти">
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</form>
+					</div>
 				</li>
 				<li>
 					<a class="user-navigation basket">
@@ -154,7 +172,12 @@
 			<article class="follow">
 				<div class="follow-bg">
 					<p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<input type="submit" class="button send" value="Отправить"></input>
+					<form action="https://echo.htmlacademy.ru/" method="post">
+						<label for="email-field">
+							<input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+						</label>
+						<input type="submit" class="button send"></input>
+					</form>
 				</div>
 			</article>
 		</div>
@@ -170,6 +193,18 @@
 						<a class="contact-tell" href="tel:88124502525">8 812 450-25-25</a>
 						<p class="contact-date">(с 10 до 20 ежедневно)</p>
 						<a class="contact-form button" href="#">Форма обратной связи</a>
+					</div>
+					<div class="contact-forms">
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<label for="name-field">
+								<input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+							</label>
+							<label for="email-field-second">
+								<input type="email" name="email" id="email-field-second" placeholder="email@example.com" required>
+							</label>
+							<textarea id="txt-forms" cols="45" rows="8" placeholder="В свободной форме"></textarea>
+							<input type="submit" class="button contact-btn" value="Отправить"></input>
+						</form>
 					</div>
 				</section>
 			</div>
