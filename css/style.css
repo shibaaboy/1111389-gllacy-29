@@ -481,6 +481,7 @@ img {
 }
 
 .slider {
+	position: relative;
 	text-align: center;
 }
 
@@ -494,11 +495,6 @@ img {
 	background: rgba(215, 242, 227, 0.75);
 	filter: blur(250px);
 	z-index: -1;
-}
-
-.slider-nav {
-	margin-left: 27px;
-	text-align: left;
 }
 
 .go {
@@ -526,21 +522,30 @@ img {
 }
 
 .slider-input:checked + label:before {
-	left: -27px;
 	background-color: var(--basic-white);
 }
 
+.slider-nav label:hover:before {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider-nav label {
+ 	position: relative;
+}
+
  .slider-nav {
-	position: relative;
+ 	display: flex;
+ 	min-width: 79px;
+ 	justify-content: space-between;
+	position: absolute;
+	bottom: 54px;
 }
 
 .slider-nav label:before {
 	content: '';
 	display: block;
-	position: absolute;
 	width: 21px;
 	height: 21px;
-	bottom: 77px;
 	border-radius: 50%;
 	box-sizing: border-box;
 	border: 2px solid #FFFFFF;
