@@ -901,9 +901,9 @@ img {
 .contact {
 	position: absolute;
     bottom: -87px;
-    right: 8px;
+    right: 0;
     width: 303px;
-    height: 306px;
+    min-height: 306px;
     background-color: #FEFEFE;
     transform: translateY(-50%);
     border-radius: 16px;
@@ -1378,4 +1378,9 @@ img {
     font-size: 24px;
     line-height: 28px;
     color: var(--basic-dark);
+}
+
+.login-form-txt {
+	display: flex;
+	flex-direction: column;
 }
