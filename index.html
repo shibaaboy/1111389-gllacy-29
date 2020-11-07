@@ -38,13 +38,11 @@
 							<path d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/>
 						</svg>
 					</a>
-					<div class="search-form">
-						<form action="https://echo.htmlacademy.ru/" method="post">
-							<label for="label-search">
-								<input type="search" name="label-search" id="label-search" placeholder="Крем-брюле">
-							</label>
-						</form>
-					</div>
+					<form action="https://echo.htmlacademy.ru/" method="post" class="search-form">
+						<label for="label-search">
+							<input type="search" name="label-search" id="label-search" class="search-forms" placeholder="Крем-брюле">
+						</label>
+					</form>
 				</li>
 				<li class="user-navigation-link-login">
 					<a class="user-navigation login" href="#">
@@ -55,12 +53,12 @@
 					Вход
 					</a>
 					<div class="login-form">
-						<form action="https://echo.htmlacademy.ru/" method="post">
+						<form action="https://echo.htmlacademy.ru/" method="post" class="login-form-wrapper">
 							<label for="label-login">
-								<input type="text" name="login" id="login-field" placeholder="email@example.com" required>
+								<input type="text" name="login" id="login-field" class="login-forms" placeholder="email@example.com" required>
 							</label>
 							<label for="label-password">
-								<input type="password" name="password" id="password-field" placeholder="......" required>
+								<input type="password" name="password" id="password-field" class="password-forms" placeholder="......" required>
 							</label>
 								<input type="submit" class="btn-login button" value="Войти">
 							<div class="login-form-txt">
@@ -70,7 +68,7 @@
 						</form>
 					</div>
 				</li>
-				<li>
+				<li class="user-navigation-link-basket">
 					<a class="user-navigation basket">
 					<svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9zM7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2z" fill="#fff"/>
@@ -169,14 +167,14 @@
 		<div class="info-blog container">
 			<article class="news">
 				<span>Новое в нашем блоге</span>
-				<h1 class="ten-way"><a href="#">10 способов сервировки фруктовых щербетов к&nbsp;столу</a></h1>
+				<h1 class="ten-way"><a href="#">10 способов сервировки фруктовых щербетов &nbsp; к&nbsp;столу</a></h1>
 			</article>
 			<article class="follow">
 				<div class="follow-bg">
 					<p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form action="https://echo.htmlacademy.ru/" method="post">
-						<label for="email-field">
-							<input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+						<label for="email-field-follow">
+							<input type="email" name="email" id="email-field-follow" class="email-follow" placeholder="email@example.com" required>
 						</label>
 						<input type="submit" class="button send"></input>
 					</form>
@@ -196,22 +194,20 @@
 						<p class="contact-date">(с 10 до 20 ежедневно)</p>
 						<a class="contact-form button" href="#">Форма обратной связи</a>
 					</div>
-					<div class="contact-forms">
-						<form action="https://echo.htmlacademy.ru/" method="post">
-							<h1 class="form-title">Мы обязательно вам ответим!</h1>
-							<label for="name-field">
-								<input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
-							</label>
-							<label for="email-field-second">
-								<input type="email" name="email" id="email-field-second" placeholder="email@example.com" required>
-							</label>
-							<textarea id="txt-forms" cols="44" rows="7" placeholder="В свободной форме"></textarea>
-							<input type="submit" class="button contact-btn" value="Отправить"></input>
-						</form>
-					</div>
 				</section>
 			</div>
 		</section>
+		<form action="https://echo.htmlacademy.ru/" method="post" class="contact-forms">
+			<h1 class="form-title">Мы обязательно вам ответим!</h1>
+			<label for="name-field">
+				<input type="text" name="name" id="name-field" class="name-forms" placeholder="Имя Фамилия" required>
+			</label>
+			<label for="email-field">
+				<input type="email" name="email" id="email-field" class="email-forms" placeholder="email@example.com" required>
+			</label>
+			<textarea class="txt-forms" id="txt-forms" cols="48" rows="7" placeholder="В свободной форме"></textarea>
+			<input type="submit" class="button contact-btn" value="Отправить"></input>
+		</form>
 	</main>
 	<footer class="main-footer container">
 		<ul class="social-network">

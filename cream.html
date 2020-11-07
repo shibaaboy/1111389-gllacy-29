@@ -14,8 +14,15 @@
 				<img src="img/SVG/logo.svg" width="154" height="64" alt="Лого Глейси">
 			</a>
 			<ul class="site-navigation">
-				<li class="site-navigation-link active">
+				<li class="site-navigation-link site-navigation-link-catalog site-navigation-link-active">
 					<a href="catalog.html">Каталог</a>
+					<ul class="catalog-menu">
+						<li class="catalog-menu-link new"><a href="#">Новинки</a></li>
+						<li class="catalog-menu-link cream-active"><a href="cream.html">Сливочное</a></li>
+						<li class="catalog-menu-link"><a href="#">Щербеты</a></li>
+						<li class="catalog-menu-link"><a href="#">Фруктовый лед</a></li>
+						<li class="catalog-menu-link"><a href="#">Мелорин</a></li>
+					</ul>
 				</li>
 				<li class="site-navigation-link">
 					<a href="#">Доставка и оплата</a>
@@ -31,13 +38,11 @@
 							<path d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/>
 						</svg>
 					</a>
-					<div class="search-form">
-						<form action="https://echo.htmlacademy.ru/" method="post">
-							<label for="label-search">
-								<input type="search" name="label-search" id="label-search" placeholder="Крем-брюле">
-							</label>
-						</form>
-					</div>
+					<form action="https://echo.htmlacademy.ru/" method="post" class="search-form">
+						<label for="label-search">
+							<input type="search" name="label-search" id="label-search" class="search-forms" placeholder="Крем-брюле">
+						</label>
+					</form>
 				</li>
 				<li class="user-navigation-link-login">
 					<a class="user-navigation login" href="#">
@@ -48,25 +53,49 @@
 					Вход
 					</a>
 					<div class="login-form">
-						<form action="https://echo.htmlacademy.ru/" method="post">
+						<form action="https://echo.htmlacademy.ru/" method="post" class="login-form-wrapper">
 							<label for="label-login">
-								<input type="text" name="login" id="login-field" placeholder="email@example.com" required>
+								<input type="text" name="login" id="login-field" class="login-forms" placeholder="email@example.com" required>
 							</label>
 							<label for="label-password">
-								<input type="password" name="password" id="password-field" placeholder="......" required>
+								<input type="password" name="password" id="password-field" class="password-forms" placeholder="......" required>
 							</label>
 								<input type="submit" class="btn-login button" value="Войти">
-							<a href="#">Забыли пароль?</a>
-							<a href="#">Новая регистрация</a>
+							<div class="login-form-txt">
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</div>
 						</form>
 					</div>
 				</li>
-				<li>
+				<li class="user-navigation-link-basket full-basket">
 					<a class="user-navigation basket">
-					<svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9zM7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2z" fill="#fff"/>
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="#343434"/>
+						<path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="#343434"/>
+						<path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="#343434"/>
+						<path d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="#E84D37"/>
 					</svg>
-					Пусто
+					2 товара
+					<div class="backet-form">
+						<div class="first-small">
+							<img src="img/Ice-cream/small-ice-1.png" width="33" height="33" alt="">
+							<p class="small-txt">Пломбир с апельсиновым джемом</p>
+							<p class="small-kg">1,5 кг х <span>200 руб.</span></p>
+							<p class="small-price">300 руб.</p>
+						</div>
+						<div class="second-small">
+							<img src="img/Ice-cream/small-ice-2.png" width="33" height="33" alt="">
+							<p class="small-txt">Клубничный пломбир с присыпкой из белого шоколада</p>
+							<p class="small-kg">1,5 кг х <span>300 руб.</span></p>
+							<p class="small-price">450 руб.</p>
+						</div>
+						<div class="linear"></div>
+						<div class="summ">
+							<p>Итого:&nbsp;750 руб.</p>
+						</div>
+						<input type="submit" class="button basket-btn" value="Оформить заказ">
+					</div>
 					</a>
 				</li>
 			</ul>
@@ -85,13 +114,82 @@
 		<h1 class="cream-title container">Сливочное мороженое</h1>
 		<section class="filter container">
 			<h2 class="visually-hidden">Фильтр товара</h2>
-			<!-- Фильтр -->
+			  	<!-- <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="filter-sorting">
+                        <label class="filter-name">Сортировка:</label>
+                        <select class="filter-sort" name="sorting">
+                            <option value="popular">по популярности</option>
+                            <option value="inexpensive">сначала недорогие</option>
+                            <option value="expensive">сначала дорогие</option>
+                            <option value="fat">по жирности</option>
+                        </select>
+                    </div>
+                    <div class="filter-range">
+                        <label class="filter-name">Цена: 100 руб. - 500 руб.</label>
+                    </div>
+                    <div class="filter-fat">
+                        <label class="filter-name">Жирность:</label>
+                        <ul class="filter-fat-list">
+                            <li class="filter-fatness-link">
+                                <label>
+                                    <input type="radio" name="fatness" value="0"></span>0%
+                                </label>
+                            </li>
+                            <li class="filter-fatness-link">
+                                <label>
+                                    <input type="radio" name="fatness" value="10%" checked></span>до 10%
+                                </label>
+                            </li>
+                            <li class="filter-fatness-link">
+                                <label>
+                                    <input type="radio" name="fatness" value="30%"></span>до 30%
+                                </label>
+                            </li>
+                            <li class="filter-fatness-link">
+                                <label>
+                                    <input type="radio" name="fatness" value="more 30%"></span>выше 30%
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-filler">
+                        <label class="filter-name">Наполнители:</label>
+                        <ul class="filter-filler-list">
+                            <li class="filter-filler-link">
+                                <label>
+                                    <input type="checkbox" name="chocolate" checked>шоколадные
+                                </label>
+                            </li>
+                            <li class="filter-filler-link">
+                                <label for="sugar-powders">
+                                    <input type="checkbox" name="sugar powders" id="sugar-powders" checked>сахарные присыпки
+                                </label>
+                            </li>
+                            <li class="filter-filler-link">
+                                <label for="fruits">
+                                    <input type="checkbox" name="fruits" id="fruits">фрукты
+                                </label>
+                            </li>
+                            <li class="filter-filler-link">
+                                <label for="syrups">
+                                    <input type="checkbox" name="syrups" id="syrups">сиропы
+                                </label>
+                            </li>
+                            <li class="filter-filler-link">
+                                <label for="jams">
+                                    <input type="checkbox" name="jams" id="jams">джемы
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <input class="btn-filter" type="submit" value="Применить">
+                </form> -->
 		</section>
 		<section class="goods container">
 			<h2 class="visually-hidden">Товары</h2>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice1.jpg" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
-				<p class="icecream-price">310 ₽
+				<p class="price">310 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -99,7 +197,7 @@
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice2.jpg" alt="Мороженое сливочно-кофейное с кусочками шоколада">
-				<p class="icecream-price">380 ₽
+				<p class="price">380 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочно-кофейное с кусочками шоколада</p>
@@ -107,7 +205,7 @@
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice3.jpg" alt="Мороженое сливочно-клубничное  с присыпкой из белого шоколада">
-				<p class="icecream-price">355 ₽
+				<p class="price">355 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -115,23 +213,23 @@
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice4.jpg" alt="Мороженое сливочное крем-брюле  с карамельной подливкой">
-				<p class="icecream-price">415 ₽
+				<p class="price">415 ₽
 					<span>/кг</span>
 				</p>
-				<p class="icecream-description">Сливочное крем-брюле с карамельной подливкой</p>
+				<p class="icecream-description">Сливочное крем-брюле с&nbsp;карамельной подливкой</p>
 				<a class="icecream-link button" href="#">Быстрый просмотр</a>
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice5.jpg" alt="Мороженое сливочное с брусничным джемом">
-				<p class="icecream-price">325 ₽
+				<p class="price">325 ₽
 					<span>/кг</span>
 				</p>
-				<p class="icecream-description">Сливочное с брусничным джемом</p>
+				<p class="icecream-description">Сливочное с брусничным &nbsp; джемом</p>
 				<a class="icecream-link button" href="#">Быстрый просмотр</a>
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice6.jpg" alt="Мороженое сливочно-черничное с цельными ягодами черники">
-				<p class="icecream-price">410 ₽
+				<p class="price">410 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочно-черничное с цельными ягодами черники</p>
@@ -139,7 +237,7 @@
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice7.jpg" alt="Мороженое сливочно-лимонное с карамельной присыпкой">
-				<p class="icecream-price">315 ₽
+				<p class="price">315 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочно-лимонное с карамельной присыпкой</p>
@@ -147,7 +245,7 @@
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice8.jpg" alt="Мороженое сливочное с шоколадной стружкой">
-				<p class="icecream-price">320 ₽
+				<p class="price">320 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочное с шоколадной стружкой</p>
@@ -155,23 +253,23 @@
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice9.jpg" alt="Мороженое сливочно-ванильное с кусочками шоколада">
-				<p class="icecream-price">440 ₽
+				<p class="price">440 ₽
 					<span>/кг</span>
 				</p>
-				<p class="icecream-description">Сливочно-ванильное с кусочками шоколада</p>
+				<p class="icecream-description">Сливочно-ванильное с&nbsp;кусочками шоколада</p>
 				<a class="icecream-link button" href="#">Быстрый просмотр</a>
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice10.jpg" alt="Мороженое сливочноe с ментоловым сиропом">
-				<p class="icecream-price">435 ₽
+				<p class="price">435 ₽
 					<span>/кг</span>
 				</p>
-				<p class="icecream-description">Сливочноe с ментоловым сиропом</p>
+				<p class="icecream-description">Сливочноe с ментоловым &nbsp; сиропом</p>
 				<a class="icecream-link button" href="#">Быстрый просмотр</a>
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice11.jpg" alt="Мороженое cливочное с кусочками черного шоколада">
-				<p class="icecream-price">355 ₽
+				<p class="price">355 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочное с кусочками черного шоколада</p>
@@ -179,7 +277,7 @@
 			</div>
 			<div class="icecream">
 				<img src="img/Ice-cream/ice12.jpg" alt="Мороженое сливочное с мятным сиропом">
-				<p class="icecream-price">420 ₽
+				<p class="price">420 ₽
 					<span>/кг</span>
 				</p>
 				<p class="icecream-description">Сливочное с мятным сиропом</p>
@@ -194,7 +292,7 @@
 				<li><a class="pagination-link" href="#">3</a></li>
 				<li><a class="pagination-link" href="#">4</a></li>
 				<li><a class="pagination-link" href="#">5</a></li>
-				<li><svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.84 5.66L.94.15A.57.57 0 00.53 0a.57.57 0 00-.38.15.47.47 0 000 .71L5.69 6 .16 11.17a.5.5 0 00-.16.35c0 .07.01.14.04.2a.5.5 0 00.12.16c.1.08.24.13.39.12a.54.54 0 00.37-.15l5.92-5.48a.47.47 0 000-.71z" fill="#fff"/></svg></li>
+				<li><a href="#"><svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.84 5.66L.94.15A.57.57 0 00.53 0a.57.57 0 00-.38.15.47.47 0 000 .71L5.69 6 .16 11.17a.5.5 0 00-.16.35c0 .07.01.14.04.2a.5.5 0 00.12.16c.1.08.24.13.39.12a.54.54 0 00.37-.15l5.92-5.48a.47.47 0 000-.71z" fill="#fff"/></svg></a></li>
 			</ul>
 		</aside>
 	</main>
