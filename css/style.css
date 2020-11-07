@@ -1141,14 +1141,240 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 857px;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 
 .filter-name {
+	margin: 0;
+	margin-top: -3px;
+	padding-left: 16px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
 	color: var(--basic-white);
+}
+
+.filter-sorting {
+	width: 196px;
+}
+
+.filter-range {
+	width: 218px;
+}
+
+.filter-fat {
+	width: 425px;
+}
+
+.filter-filler {
+	width: 711px;
+	margin-top: 17px;
+}
+
+.filter-sort {
+    width: 196px;
+	margin-top: 6px;
+    padding: 8px 11px 10px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: url('../img/Backgrounds/sort.png');
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    border-radius: 20px;
+    appearance: none;
+}
+
+.filter-sort:hover {
+	background-color: var(--basic-white);
+	color: var(--basic-dark);
+	background-image: url('../img/Backgrounds/sort2.png');
+	background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+
+.filter-range-scale {
+	position: relative;
+    width: 218px;
+    height: 36px;
+    margin-top: 6px;
+    left: 6px;
+    border-radius: 20px;
+    background-color: #a9bbb1;
+}
+
+.toggle {
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f8f7f4;
+    box-shadow: 0 1px 1px 0 #9caaa1;
+}
+
+.toggle-min {
+    top: 7px;
+    left: 34px;
+}
+
+.toggle-max {
+    top: 7px;
+    right: 66px;
+}
+
+.toggle-min:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 4px;
+	height: 4px;
+	background: #ABABAB;
+	border-radius: 50%;
+}
+
+.toggle-max:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 4px;
+	height: 4px;
+	background: #ABABAB;
+	border-radius: 50%;
+}
+
+.filter-range-bar {
+    position: absolute;
+    top: 16px;
+    left: 21px;
+    width: 176px;
+    height: 2px;
+    background-color: rgba(248, 247, 244, 0.5);
+}
+
+.filter-range-bar:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 21px;
+	width: 106px;
+	height: 2px;
+	background-color: #F8F7F4;
+}
+
+.filter-fat-list {
+	width: 425px;
+	margin: 0;
+	margin-top: 6px;
+	margin-left: 12px;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    border-radius: 20px;
+    background-color: #aabcb2;
+}
+
+.filter-fatness-item {
+	position: relative;
+    margin-right: 5px;
+    padding: 10px 0 8px 47px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.filter-fatness-item label {
+    font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+}
+
+.filter-fatness-item input[type=radio],.filter-filler-item input[type=checkbox] {
+    display: none;
+}
+
+.filter-fatness-item input[type=radio]+.radio-indicator {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filter-fatness-item input[type=radio]:checked + .radio-indicator:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.filter-filler-list {
+    font-size: 0;
+    margin: 0;
+    margin-top: 8px;
+    padding: 0;
+    border-radius: 20px;
+    background-color: #a8b9af;
+}
+
+.filter-filler-item {
+    position: relative;
+    display: inline-block;
+    padding: 9px 0 9px 47px;
+    margin-right: 5px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.filter-filler-item label {
+    font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+}
+
+.filter-filler-item input[type=checkbox]+.checkbox-indicator {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.btn-filter {
+	width: 144px;
+	min-height: 36px;
+	margin-top: 38px;
+    margin-right: -12px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	background: rgba(255, 255, 255, 0.2);
+	color: var(--basic-white);
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 20px;
 }
 
 /* Cream goods */
