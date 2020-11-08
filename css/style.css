@@ -214,7 +214,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
     padding-top: 20px;
-	margin-top: 30px;
+	margin-top: -2px;
 	
 }
 
@@ -1155,6 +1155,14 @@ img {
 	color: var(--basic-white);
 }
 
+.price-filter {
+	padding-left: 23px;
+}
+
+.fat-filter {
+	padding-left: 29px;
+}
+
 .filter-sorting {
 	width: 196px;
 }
@@ -1182,7 +1190,7 @@ img {
     color: var(--basic-white);
     border: none;
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url('../img/Backgrounds/sort.png');
+    background-image: url('../img/sort.png');
     background-repeat: no-repeat;
     background-position: right 14px center;
     border-radius: 20px;
@@ -1192,7 +1200,7 @@ img {
 .filter-sort:hover {
 	background-color: var(--basic-white);
 	color: var(--basic-dark);
-	background-image: url('../img/Backgrounds/sort2.png');
+	background-image: url('../img/sort2.png');
 	background-repeat: no-repeat;
     background-position: right 14px center;
 }
@@ -1334,10 +1342,18 @@ img {
     background-color: #a8b9af;
 }
 
+.filter-filler-list li:nth-child(3) {
+	margin-left: 1px;
+}
+
+.filter-filler-list li:nth-child(4) {
+	margin-left: 6px;
+}
+
 .filter-filler-item {
     position: relative;
     display: inline-block;
-    padding: 9px 0 9px 47px;
+    padding: 9px 0 9px 49px;
     margin-right: 5px;
     line-height: 18px;
     font-size: 16px;
@@ -1352,7 +1368,7 @@ img {
 	color: var(--basic-white);
 }
 
-.filter-filler-item input[type=checkbox]+.checkbox-indicator {
+.filter-filler-item input[type=checkbox] +.checkbox-indicator {
     position: absolute;
     top: 8px;
     left: 16px;
@@ -1360,6 +1376,18 @@ img {
     height: 18px;
     border: 1px solid #fff;
     border-radius: 3px;
+}
+
+.filter-filler-item input[type=checkbox]:checked +.checkbox-indicator:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 24px;
+    height: 20px;
+    background-image: url('../img/checkbox-on.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .btn-filter {
@@ -1413,6 +1441,10 @@ img {
 }
 
 /* Pagination */
+
+.pagination-block {
+	margin-bottom: 32px;
+}
 
 .pagination li {
 	list-style: none;
