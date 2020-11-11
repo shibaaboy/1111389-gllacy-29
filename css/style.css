@@ -653,11 +653,11 @@ img {
 .icecream:after {
 	content: '';
 	display: none;
+	position: absolute;
 	width: calc(100% + 26px);
 	height: calc(100% + 85px);
 	top: -6px;
 	left: -13px;
-	position: absolute;
 	background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
